@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\ALGO 1\algo 1 algos"
+CMAKE_SOURCE_DIR = C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\ALGO 1\algo 1 algos\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/algo_1_algos.dir/depend.make
@@ -77,45 +77,60 @@ include CMakeFiles/algo_1_algos.dir/flags.make
 
 CMakeFiles/algo_1_algos.dir/main.cpp.obj: CMakeFiles/algo_1_algos.dir/flags.make
 CMakeFiles/algo_1_algos.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ALGO 1\algo 1 algos\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algo_1_algos.dir/main.cpp.obj"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algo_1_algos.dir\main.cpp.obj -c "D:\ALGO 1\algo 1 algos\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algo_1_algos.dir\main.cpp.obj -c C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\main.cpp
 
 CMakeFiles/algo_1_algos.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algo_1_algos.dir/main.cpp.i"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ALGO 1\algo 1 algos\main.cpp" > CMakeFiles\algo_1_algos.dir\main.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\main.cpp > CMakeFiles\algo_1_algos.dir\main.cpp.i
 
 CMakeFiles/algo_1_algos.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/main.cpp.s"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ALGO 1\algo 1 algos\main.cpp" -o CMakeFiles\algo_1_algos.dir\main.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\main.cpp -o CMakeFiles\algo_1_algos.dir\main.cpp.s
 
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj: CMakeFiles/algo_1_algos.dir/flags.make
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj: ../busqueda.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ALGO 1\algo 1 algos\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algo_1_algos.dir\busqueda.cpp.obj -c "D:\ALGO 1\algo 1 algos\busqueda.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algo_1_algos.dir\busqueda.cpp.obj -c C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\busqueda.cpp
 
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algo_1_algos.dir/busqueda.cpp.i"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ALGO 1\algo 1 algos\busqueda.cpp" > CMakeFiles\algo_1_algos.dir\busqueda.cpp.i
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\busqueda.cpp > CMakeFiles\algo_1_algos.dir\busqueda.cpp.i
 
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/busqueda.cpp.s"
-	D:\chamanzurdo\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ALGO 1\algo 1 algos\busqueda.cpp" -o CMakeFiles\algo_1_algos.dir\busqueda.cpp.s
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\busqueda.cpp -o CMakeFiles\algo_1_algos.dir\busqueda.cpp.s
+
+CMakeFiles/algo_1_algos.dir/HR.cpp.obj: CMakeFiles/algo_1_algos.dir/flags.make
+CMakeFiles/algo_1_algos.dir/HR.cpp.obj: ../HR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algo_1_algos.dir\HR.cpp.obj -c C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\HR.cpp
+
+CMakeFiles/algo_1_algos.dir/HR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algo_1_algos.dir/HR.cpp.i"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\HR.cpp > CMakeFiles\algo_1_algos.dir\HR.cpp.i
+
+CMakeFiles/algo_1_algos.dir/HR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/HR.cpp.s"
+	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\HR.cpp -o CMakeFiles\algo_1_algos.dir\HR.cpp.s
 
 # Object files for target algo_1_algos
 algo_1_algos_OBJECTS = \
 "CMakeFiles/algo_1_algos.dir/main.cpp.obj" \
-"CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
+"CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj" \
+"CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
 
 # External object files for target algo_1_algos
 algo_1_algos_EXTERNAL_OBJECTS =
 
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/main.cpp.obj
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj
+algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/HR.cpp.obj
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/build.make
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/linklibs.rsp
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/objects1.rsp
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\ALGO 1\algo 1 algos\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable algo_1_algos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable algo_1_algos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algo_1_algos.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +143,6 @@ CMakeFiles/algo_1_algos.dir/clean:
 .PHONY : CMakeFiles/algo_1_algos.dir/clean
 
 CMakeFiles/algo_1_algos.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\ALGO 1\algo 1 algos" "D:\ALGO 1\algo 1 algos" "D:\ALGO 1\algo 1 algos\cmake-build-debug" "D:\ALGO 1\algo 1 algos\cmake-build-debug" "D:\ALGO 1\algo 1 algos\cmake-build-debug\CMakeFiles\algo_1_algos.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS\cmake-build-debug\CMakeFiles\algo_1_algos.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/algo_1_algos.dir/depend
 

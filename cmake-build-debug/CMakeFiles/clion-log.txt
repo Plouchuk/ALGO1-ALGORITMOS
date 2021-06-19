@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/chamanzurdo/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/chamanzurdo/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/chamanzurdo/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" "d:\ALGO 1\algo 1 algos"
+"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Lucho\Documents\GitHub\ALGO1-ALGORITMOS
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/ALGO 1/algo 1 algos/cmake-build-debug
+-- Build files have been written to: C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug

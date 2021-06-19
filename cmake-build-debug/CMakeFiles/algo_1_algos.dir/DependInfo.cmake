@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/ALGO 1/algo 1 algos/busqueda.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
-  "D:/ALGO 1/algo 1 algos/main.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/HR.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
+  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/busqueda.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
+  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/main.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

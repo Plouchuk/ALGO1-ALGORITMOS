@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
   "CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
   "CMakeFiles/algo_1_algos.dir/main.cpp.obj"
   "algo_1_algos.exe"

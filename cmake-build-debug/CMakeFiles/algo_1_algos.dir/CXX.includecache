@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/ALGO 1/algo 1 algos/busqueda.cpp
+busqueda.h
+D:/ALGO 1/algo 1 algos/busqueda.h
+iostream
+-
+vector
+-
+
+D:/ALGO 1/algo 1 algos/busqueda.h
+
+D:/ALGO 1/algo 1 algos/main.cpp
+iostream
+-
+

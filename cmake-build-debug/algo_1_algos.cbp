@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="algo_1_algos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/ALGO 1/algo 1 algos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/ALGO 1/algo 1 algos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algo_1_algos">
+				<Option output="D:/ALGO 1/algo 1 algos/cmake-build-debug/algo_1_algos.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ALGO 1/algo 1 algos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 algo_1_algos"/>
+					<CompileFile command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algo_1_algos/fast">
+				<Option output="D:/ALGO 1/algo 1 algos/cmake-build-debug/algo_1_algos.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ALGO 1/algo 1 algos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="d:\chamanzurdo\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 algo_1_algos/fast"/>
+					<CompileFile command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/ALGO 1/algo 1 algos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/chamanzurdo/bin/mingw32-make.exe -f &quot;D:/ALGO 1/algo 1 algos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/ALGO 1/algo 1 algos/busqueda.cpp">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="D:/ALGO 1/algo 1 algos/busqueda.h">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="D:/ALGO 1/algo 1 algos/main.cpp">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="D:/ALGO 1/algo 1 algos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

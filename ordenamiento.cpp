@@ -16,12 +16,12 @@ void swap ( vector <int> &lista , int a, int b) {
 void insertar ( vector <int > &lista , int i) {
     while (i > 0 && lista [i] < lista [i -1]) {
         swap (lista ,i,i -1) ;
-        i - -;
+        i-- ;
     }
 }
 
 //main Insertion
-vector <int > insertionSort (vector <int > lista ) {
+vector <int > insertionSort (vector <int > lista ) { // O (n^2)
     for(int i=0; i < lista . size () ; i++) {
         insertar (lista ,i) ;
     }
@@ -70,7 +70,7 @@ void burbujeo ( vector <int > &lista , int i) {
     }
 }
 //main Bubble
-vector <int > bubbleSort (vector <int > lista ) {
+vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
     for(int i=0; i< lista . size () ; i++) {
         burbujeo (lista ,i) ;
 
@@ -86,15 +86,15 @@ void mostrarVector(const vector<int>& v){
     cout << "[";
     for (int i = 0; i < v.size(); i++){
         if (i == v.size() - 1){
-            std::cout << v[i] << "]" << std::endl;
+            cout << v[i] << "]" << std::endl;
         } else{
-            std::cout << v[i] << ", ";
+           cout << v[i] << ", ";
         }
     }
 }
 
 
-vector <int > countingSort (vector <int > & lista ) {
+/* vector <int > countingSort (vector <int > & lista ) {
     vector <int > conteo = contar ( lista ) ;
     return reconstruir (lista , conteo ) ;
 }
@@ -107,6 +107,8 @@ vector <int > contar (vector <int > & lista ) {
     for (int i = 0; i < lista.size(); i++) {
         conteo[lista[i]]++;
     }
+    return conteo;
+
 }
 
 vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
@@ -126,9 +128,59 @@ vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
     return lista;
 }
 
+*/
+
+void counting_sort(vector<int> & A){
+
+
+
+vector <int> B;//create vector temp
+B.clear();// clear vectors before use
+
+vector <int> C;
+
+C.clear();
+
+int min = 0;
+
+
+
+
+for (int i = 0; i < A.size(); i++)
+
+C[A[i]] = C[A[i]] + 1;
+
+
+
+for (int i = 1; i <= A.size(); i++)
+
+C[i] = C[i] + C[i - 1];
+
+
+
+for (int i = A.size() - 1; i >= 0; i--)
+
+{
+
+B[C[A[i]] - 1] = A[i];
+
+C[A[i]] = C[A[i]] -1;
+
+}
+
+
+for (int i =0;i<A.size();i++)
+
+{
+
+A[i]=B[i];
+
+}
+
+}
 
 // --- COCKTAILSORT
-void cocktailSort(vector<int> &s) {
+void cocktailSort(vector<int> &s) { // es O (n^2)
     if (s.size() != 0) {
         for (int i = 0; i < (s.size() - 1) / 2; i++) {
             int minPos = findMinPosition(s, i, s.size());
@@ -143,7 +195,7 @@ void cocktailSort(vector<int> &s) {
     }
 }
 
-void cocktailShakerSort(vector<int> &s) {
+void cocktailShakerSort(vector<int> &s) { // es O(n^2)
     if (s.size() != 0){
         int i = 0;
         int j = 0;
@@ -183,7 +235,7 @@ void swapVector(vector<int> &s, int i, vector<int> l) {
     }
 }
 
-void bingoSort(vector<int> &s) {
+void bingoSort(vector<int> &s) { // O( N^2)
     if (s.size() != 0) {
         int i = 0;
         while (i < s.size() - 1) {

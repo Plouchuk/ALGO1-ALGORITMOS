@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<cmath>
+#include <string>
 
 using namespace std;
 
@@ -23,11 +24,6 @@ bool JumpSearch(vector<int> v, int e);
 
 
 
-int main(){
-
-    return 0;
-}
-
 //B�squeda: --------------------------------------------------------------------------------------//
 // Lineal: O(|lista|) = O(n)
 //int i = 0; while(i < lista.size() && lista[i] != e)
@@ -43,17 +39,21 @@ bool linearSearch (vector <int> lista , int e) {
 }
 //Para no buscar sobre la lista completa
 //Pre: 0 <= desde, hasta <|v|
-bool linealEntreIndices(vector<int> v,int desde, int hasta, int elem ){
+bool linealEntreIndices(vector<int> v,int desde, int hasta, int elem ) {
     bool res = false;
     int i = desde;
-    while(i <= hasta && !res){
-        if(v[i] == elem){
-            res = true;
+    if (desde == hasta) {
+        res = false;
+    } else {
+        while (i <= hasta && !res) {
+            if (v[i] == elem) {
+                res = true;
+            }
+            i++;
         }
-        i++;
-    }
 
-    return res;
+        return res;
+    }
 }
 
 //Binaria
@@ -73,24 +73,6 @@ bool busquedaBin(vector<int> lista, int desde, int hasta, int e){
     return res;
 }
 
-//Binaria Recursiva:
-bool binarySearcRec ( vector <int > lista , int desde , int hasta , int k) {
-    if ( hasta >= desde ) {
-        int medio = desde + ( hasta - desde ) /2;
-        if ( lista [ medio ] == k) { // encontre el
-            elemento
-            return true ;
-        }
-        if ( lista [ medio ] > k) { // esta en la mitad
-            izquierda
-            return binarySearch (lista , desde , medio -1 ,k) ;
-        }
-// esta en la mitad derecha
-        return binarySearch (lista , medio +1 , r, k) ;
-    }
-// no esta
-    return false ;
-}
 
 //JumpSearch
 //REVISAR*******************************************************//
@@ -114,15 +96,49 @@ bool JumpSearch(vector<int> v, int e) {
         if (v[prev] == e) {
             res = true;
         } else if (v[prev] < e) {
-            prev = prev + paso;
         } else {//v[prev] > e busco desde prev hasta prev-sqrt(|v|)
 
             res = linealEntreIndices(v, prev - minimo(sqrt(v.size()), prev), prev, e);
         }
+        prev = prev + paso;
 
     }
 
     return res;
 }
 
+int jump_Search(vector<int> v , int item) {
+    int i = 0;
+    int m = sqrt(v.size()); //initializing block size= √(n)
 
+    while (v[m] <= item && m < v.size()) {
+        // the control will continue to jump the blocks
+        i = m;  // shift the block
+        m += sqrt(v.size());
+        if (m > v.size() - 1)  // if m exceeds the array size
+            return -1;
+    }
+}
+
+
+// STRINGS BUSQUEDA
+
+bool matches(string &t, string &p, int i) {
+    int k = 0;
+    while (k < p.size() && t[i + k] == p[k]) {
+        k++;
+    }
+    return k == p.size();
+}
+
+bool busquedaString(string &t, string &p) {
+    bool res = false;
+    if (t.size() != 0) {
+        for (int i = 0; i <= t.size() - p.size(); i++) {
+            if (matches(t, p, i)) {
+                res = true;
+            }
+        }
+    }
+    return res;
+}

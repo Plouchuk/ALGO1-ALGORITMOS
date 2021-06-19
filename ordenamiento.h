@@ -18,7 +18,7 @@ void insertar ( vector <int > &lista , int i);
 int findMinPosition(vector<int> &s, int d, int h);
 int findMaxPosition(vector<int> &s, int d, int h);
 vector <int > insertionSort (vector <int > lista );
-void selectionSort (vector <int > lista );
+void selectionSort(vector<int> &s);
 void mostrarVector(const vector<int>& v);
 void burbujeo ( vector <int > &lista , int i);
 vector <int > bubbleSort (vector <int > lista );
@@ -30,6 +30,7 @@ void bingoSort(vector<int> &s);
 vector<int> findAllMinPositions(vector<int> s, int d, int h);
 void cocktailShakerSort(vector<int> &s);
 void cocktailSort(vector<int> &s);
+void counting_sort(vector<int> & A);
 
 
 #endif //ALGO_1_ALGOS_ORDENAMIENTO_H

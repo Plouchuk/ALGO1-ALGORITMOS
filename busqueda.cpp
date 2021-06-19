@@ -2,9 +2,11 @@
 #include "busqueda.h"
 #include<iostream>
 #include<vector>
+#include<cmath>
 
 using namespace std;
 
+int minimo(int a, int b);
 //Busqueda:
 // O(|lista|) = O(n)
 bool linearSearch (vector <int > lista , int e);
@@ -17,7 +19,7 @@ bool binarySearcRec ( vector <int> lista , int desde , int hasta , int e);
 
 //Jump Search
 //O(sqrt(|lista|)) === O(sqrt(n))
-bool JumpSearch(vector<int> v, int e)
+bool JumpSearch(vector<int> v, int e);
 
 
 //Ordenamiento:
@@ -54,6 +56,20 @@ bool linearSearch (vector <int> lista , int e) {
         }
     }
     return res ;
+}
+//Para no buscar sobre la lista completa
+//Pre: 0 <= desde, hasta <|v|
+bool linealEntreIndices(vector<int> v,int desde, int hasta, int elem ){
+    bool res = false;
+    int i = desde;
+    while(i <= hasta && !res){
+        if(v[i] == elem){
+            res = true;
+        }
+        i++;
+    }
+
+    return res;
 }
 
 //Binaria
@@ -93,8 +109,37 @@ bool binarySearcRec ( vector <int > lista , int desde , int hasta , int k) {
 }
 
 //JumpSearch
-///////////
+//REVISAR*******************************************************//
 
+int minimo(int a, int b){
+    int res;
+    if(a > b){
+        res = b;
+    }
+    else{
+        res = a;
+    }
+    return res;
+}
+bool JumpSearch(vector<int> v, int e) {
+    bool res = false;
+// Finding block size to be jumped
+    int paso = sqrt(v.size());
+    int prev = 0;
+    while (prev < v.size() && !res) {
+        if (v[prev] == e) {
+            res = true;
+        } else if (v[prev] < e) {
+            prev = prev + paso;
+        } else {//v[prev] > e busco desde prev hasta prev-sqrt(|v|)
+
+            res = linealEntreIndices(v, prev - minimo(sqrt(v.size()), prev), prev, e);
+        }
+
+    }
+
+    return res;
+}
 
 
 

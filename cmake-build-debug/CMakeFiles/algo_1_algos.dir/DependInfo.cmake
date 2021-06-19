@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/HR.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
-  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/busqueda.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
-  "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/main.cpp" "C:/Users/Lucho/Documents/GitHub/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+  "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/HR.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/HR.cpp.o"
+  "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/busqueda.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
+  "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/main.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO1-ALGORITMOS/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

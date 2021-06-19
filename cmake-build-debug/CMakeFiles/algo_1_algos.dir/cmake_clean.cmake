@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algo_1_algos.dir/HR.cpp.obj"
-  "CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
-  "CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/HR.cpp.o"
+  "CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
+  "CMakeFiles/algo_1_algos.dir/main.cpp.o"
   "algo_1_algos.exe"
-  "algo_1_algos.exe.manifest"
   "algo_1_algos.pdb"
   "libalgo_1_algos.dll.a"
 )

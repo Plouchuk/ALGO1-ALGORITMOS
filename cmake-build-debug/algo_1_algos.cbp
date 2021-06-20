@@ -86,6 +86,12 @@
 		<Unit filename="D:/ALGO 1/algo 1 algos/busqueda.h">
 			<Option target="algo_1_algos"/>
 		</Unit>
+		<Unit filename="D:/ALGO 1/algo 1 algos/ejercicios.cpp">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="D:/ALGO 1/algo 1 algos/ejercicios.h">
+			<Option target="algo_1_algos"/>
+		</Unit>
 		<Unit filename="D:/ALGO 1/algo 1 algos/main.cpp">
 			<Option target="algo_1_algos"/>
 		</Unit>

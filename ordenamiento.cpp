@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include "ordenamiento.h"
+#include<array>
 using namespace std;
 
 
@@ -305,4 +306,63 @@ void Quicksort(vector<int> &v, int start, int end ){
         Quicksort(v,start,p-1);
         Quicksort(v,p+1,end);
     }
+}
+
+int getMax(vector<int> arr, int size) {
+    int max = arr[1];
+    for(int i = 2; i<=size; i++) {
+        if(arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+void ordenarC(vector<int> &items){
+    int size = items.size()-1;
+    int output[size+1];
+    int max = getMax(items, size);
+    int count[max+1];
+    for(int i = 0; i<=max; i++)
+        count[i] = 0;
+    for(int i = 1; i <=size; i++)
+        count[items[i]]++;
+    for(int i = 1; i<=max; i++)
+        count[i] += count[i-1];
+    for(int i = size; i>=1; i--) {
+        output[count[items[i]]] = items[i];
+        count[items[i]] -= 1;
+    }
+    for(int i = 1,j=size; i<=size; i++,j--) {
+
+        items[j] = output[i];
+    }
+}
+
+void counting_sorttt(vector<int> &v, int a, int b) { //U: Vector a ordenar, numero mas chiquito, numero mas grande
+    vector<int> count (b - a + 1, 0); //A: Un vector con b - a ceros que cuenta en el rango [a, b]
+    for (int i = 0; i < v.size(); ++i) { ++count[v[i] - a];	} //A: Sumo +1 a la posicion correspondiente
+
+    v.clear();
+    for (int i = 0; i < count.size(); ++i) { //A: De menor a mayor
+        //for (int i = count.size() - 1; 0 <= i; --i) { //A: De mayor a menor
+        for (int j = 0; j < count[i]; ++j) { v.push_back(i + a); } //A: Agrego la cantidad correcta de este numero
+    }
+}
+
+void bucket(vector <int>& arr){
+    int n = arr.size();
+    int x = 65537; //range is [1,65536]
+    int buckets[x];  //Create empty buckets
+    for (int i = 0; i < x; i++)  //Initialize all buckets to 0
+        buckets[i] = 0;
+
+    //Increment the # of times each element is present in the input
+    //array. Insert them in the buckets
+    for (int i = 0; i < n; i++)
+        buckets[arr[i]]++;
+
+    //Sort using insertion sort and link
+    for(int i = 0, j = x; j >= 0; j--)
+        for (int k = buckets[j]; k > 0; k--)
+            arr[i++] = j;
 }

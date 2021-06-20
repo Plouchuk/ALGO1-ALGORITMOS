@@ -168,6 +168,33 @@ busqueda.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algo_1_algos.dir\build.make CMakeFiles/algo_1_algos.dir/busqueda.cpp.s
 .PHONY : busqueda.cpp.s
 
+ejercicios.obj: ejercicios.cpp.obj
+
+.PHONY : ejercicios.obj
+
+# target to build an object file
+ejercicios.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algo_1_algos.dir\build.make CMakeFiles/algo_1_algos.dir/ejercicios.cpp.obj
+.PHONY : ejercicios.cpp.obj
+
+ejercicios.i: ejercicios.cpp.i
+
+.PHONY : ejercicios.i
+
+# target to preprocess a source file
+ejercicios.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algo_1_algos.dir\build.make CMakeFiles/algo_1_algos.dir/ejercicios.cpp.i
+.PHONY : ejercicios.cpp.i
+
+ejercicios.s: ejercicios.cpp.s
+
+.PHONY : ejercicios.s
+
+# target to generate assembly for a file
+ejercicios.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algo_1_algos.dir\build.make CMakeFiles/algo_1_algos.dir/ejercicios.cpp.s
+.PHONY : ejercicios.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -234,6 +261,9 @@ help:
 	@echo ... busqueda.obj
 	@echo ... busqueda.i
 	@echo ... busqueda.s
+	@echo ... ejercicios.obj
+	@echo ... ejercicios.i
+	@echo ... ejercicios.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -4,7 +4,11 @@
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj: ../busqueda.cpp
 CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj: ../busqueda.h
 
+CMakeFiles/algo_1_algos.dir/ejercicios.cpp.obj: ../ejercicios.cpp
+CMakeFiles/algo_1_algos.dir/ejercicios.cpp.obj: ../ejercicios.h
+
 CMakeFiles/algo_1_algos.dir/main.cpp.obj: ../busqueda.h
+CMakeFiles/algo_1_algos.dir/main.cpp.obj: ../ejercicios.h
 CMakeFiles/algo_1_algos.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/algo_1_algos.dir/main.cpp.obj: ../ordenamiento.h
 

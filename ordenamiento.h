@@ -3,6 +3,7 @@
 //
 #include<iostream>
 #include<vector>
+#include<array>
 using namespace std;
 
 #ifndef ALGO_1_ALGOS_ORDENAMIENTO_H
@@ -36,6 +37,10 @@ int maximo (int a, int b);
 int max (vector<int> &v);
 int Partition(vector<int> &v, int start, int end);
 void Quicksort(vector<int> &v, int start, int end );
+void ordenarC(vector<int> &items);
+int getMax(vector<int> arr, int size);
+void counting_sorttt(vector<int> &v, int a, int b);
+void bucket(vector <int>& arr);
 
 
 #endif //ALGO_1_ALGOS_ORDENAMIENTO_H

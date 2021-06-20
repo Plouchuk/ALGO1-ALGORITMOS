@@ -35,7 +35,9 @@ int main() {
     //mostrarVector(D);
 
     //mostrarVector(merge(B,C));
-    mostrarVector(countingSort(D));
+   // mostrarVector(countingSort(D));
+    Quicksort(D,0,D.size()-1);
+    mostrarVector(D);
     t1 = clock();
 
 

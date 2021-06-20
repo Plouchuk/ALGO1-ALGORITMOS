@@ -34,6 +34,8 @@ void counting_sort(vector<int> & A);
 vector<int> merge(vector<int> &a, vector<int> &b);
 int maximo (int a, int b);
 int max (vector<int> &v);
+int Partition(vector<int> &v, int start, int end);
+void Quicksort(vector<int> &v, int start, int end );
 
 
 #endif //ALGO_1_ALGOS_ORDENAMIENTO_H

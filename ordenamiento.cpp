@@ -4,7 +4,16 @@
 #include<array>
 using namespace std;
 
-
+void mostrarVector(const vector<int>& v){
+    cout << "[";
+    for (int i = 0; i < v.size(); i++){
+        if (i == v.size() - 1){
+            cout << v[i] << "]" << std::endl;
+        } else{
+            cout << v[i] << ", ";
+        }
+    }
+}
 //Ordenamiento: ----------------------------------------------------------------------------------//
 //Pre: 0 <= a, b < |lista|
 void swap ( vector <int> &lista , int a, int b) {
@@ -63,6 +72,7 @@ void selectionSort(vector<int> &s) {
 //------------------------------------------------//
 
 //Bubble Sort
+//O(n^2)
 void burbujeo ( vector <int > &lista , int i) {
     for(int j= lista . size () -1; j > i; j --) {
         if( lista [j] < lista [j -1]) {
@@ -82,19 +92,8 @@ vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
 //--------------------------------------------------//
 
 //Counting Sort
-
-void mostrarVector(const vector<int>& v){
-    cout << "[";
-    for (int i = 0; i < v.size(); i++){
-        if (i == v.size() - 1){
-            cout << v[i] << "]" << std::endl;
-        } else{
-           cout << v[i] << ", ";
-        }
-    }
-}
-
-
+//No funciona
+//O(n)
 vector <int > countingSort (vector <int > & lista ) {
     vector <int > conteo = contar ( lista ) ;
     return reconstruir (lista , conteo ) ;
@@ -124,7 +123,6 @@ vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
         lista[i] = indice_conteo;
         conteo[indice_conteo]--;
     }
-//Incompleto
     return  lista;
 
 }
@@ -139,7 +137,7 @@ int maximo (int a, int b){
     }
     return res;
 }
-
+//Me devuelve el maximo de una lista
 int max (vector<int> &v){
     int maxi = v[0];
     for (int i = 0; i <v.size() -1  ; ++i) {
@@ -151,58 +149,8 @@ int max (vector<int> &v){
     return maxi;
 }
 
-
-
-void counting_sort(vector<int> & A){
-
-
-
-vector <int> B;//create vector temp
-B.clear();// clear vectors before use
-
-vector <int> C;
-
-C.clear();
-
-int min = 0;
-
-
-
-
-for (int i = 0; i < A.size(); i++)
-
-C[A[i]] = C[A[i]] + 1;
-
-
-
-for (int i = 1; i <= A.size(); i++)
-
-C[i] = C[i] + C[i - 1];
-
-
-
-for (int i = A.size() - 1; i >= 0; i--)
-
-{
-
-B[C[A[i]] - 1] = A[i];
-
-C[A[i]] = C[A[i]] -1;
-
-}
-
-
-for (int i =0;i<A.size();i++)
-
-{
-
-A[i]=B[i];
-
-}
-
-}
-
 // --- COCKTAILSORT
+//O(n^2)
 void cocktailSort(vector<int> &s) { // es O (n^2)
     if (s.size() != 0) {
         for (int i = 0; i < (s.size() - 1) / 2; i++) {
@@ -217,7 +165,8 @@ void cocktailSort(vector<int> &s) { // es O (n^2)
         }
     }
 }
-
+//CocktailShaker
+//O(n^2)
 void cocktailShakerSort(vector<int> &s) { // es O(n^2)
     if (s.size() != 0){
         int i = 0;
@@ -237,7 +186,8 @@ void cocktailShakerSort(vector<int> &s) { // es O(n^2)
         }
     }
 }
-
+//BINGO SORT
+//Me devuelve un vector con todas las posiciones minimas
 vector<int> findAllMinPositions(vector<int> s, int d, int h) {
     vector<int> min;
     min.push_back(d);
@@ -251,13 +201,13 @@ vector<int> findAllMinPositions(vector<int> s, int d, int h) {
     }
     return min;
 }
-
+//funciona si l[j] es un int
 void swapVector(vector<int> &s, int i, vector<int> l) {
     for (int j = 0; j < l.size(); j++) {
         swap(s, i + j, l[j]);
     }
 }
-
+//main BingoSort
 void bingoSort(vector<int> &s) { // O( N^2)
     if (s.size() != 0) {
         int i = 0;
@@ -269,6 +219,9 @@ void bingoSort(vector<int> &s) { // O( N^2)
     }
 }
 
+//MERGE
+//O(|a|+|b|)===O(n+m)
+//concatena dos vectores ordenados ordenadamente
 vector<int> merge(vector<int> &a, vector<int> &b){
     vector<int> c(a.size()+b.size(),0);
     int i =0;
@@ -285,6 +238,8 @@ vector<int> merge(vector<int> &a, vector<int> &b){
     return c;
 }
 
+// Quicksort
+//O(n^2)
 int Partition(vector<int> &v, int start, int end){
 
     int pivot = end;
@@ -308,6 +263,8 @@ void Quicksort(vector<int> &v, int start, int end ){
     }
 }
 
+//counting sort version 2
+//O(n)
 int getMax(vector<int> arr, int size) {
     int max = arr[1];
     for(int i = 2; i<=size; i++) {
@@ -337,15 +294,19 @@ void ordenarC(vector<int> &items){
         items[j] = output[i];
     }
 }
-
+//Counting con 2 parametros FUNCIONA
+//O(n)
 void counting_sorttt(vector<int> &v, int a, int b) { //U: Vector a ordenar, numero mas chiquito, numero mas grande
     vector<int> count (b - a + 1, 0); //A: Un vector con b - a ceros que cuenta en el rango [a, b]
-    for (int i = 0; i < v.size(); ++i) { ++count[v[i] - a];	} //A: Sumo +1 a la posicion correspondiente
+    for (int i = 0; i < v.size(); ++i) {
+        ++count[v[i] - a];
+    } //A: Sumo +1 a la posicion correspondiente
 
     v.clear();
     for (int i = 0; i < count.size(); ++i) { //A: De menor a mayor
         //for (int i = count.size() - 1; 0 <= i; --i) { //A: De mayor a menor
-        for (int j = 0; j < count[i]; ++j) { v.push_back(i + a); } //A: Agrego la cantidad correcta de este numero
+        for (int j = 0; j < count[i]; ++j) {
+            v.push_back(i + a); } //A: Agrego la cantidad correcta de este numero
     }
 }
 

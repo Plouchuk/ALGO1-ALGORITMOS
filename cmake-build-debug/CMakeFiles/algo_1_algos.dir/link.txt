@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\algo_1_algos.dir/objects.a
-D:\chamanzurdo\bin\ar.exe cr CMakeFiles\algo_1_algos.dir/objects.a @CMakeFiles\algo_1_algos.dir\objects1.rsp
-D:\chamanzurdo\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\algo_1_algos.dir/objects.a -Wl,--no-whole-archive -o algo_1_algos.exe -Wl,--out-implib,libalgo_1_algos.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\algo_1_algos.dir\linklibs.rsp
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/algo_1_algos.dir/main.cpp.o CMakeFiles/algo_1_algos.dir/busqueda.cpp.o CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.o CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o -o algo_1_algos.exe -Wl,--out-implib,libalgo_1_algos.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

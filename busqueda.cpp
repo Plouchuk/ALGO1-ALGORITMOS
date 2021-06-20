@@ -75,6 +75,7 @@ bool busquedaBin(vector<int> lista, int desde, int hasta, int e){
 
 
 //JumpSearch
+//O(sqrt(|s|)) === O(sqrt(n))
 //REVISAR*******************************************************//
 
 int minimo(int a, int b){
@@ -87,25 +88,7 @@ int minimo(int a, int b){
     }
     return res;
 }
-/*bool JumpSearch(vector<int> v, int e) {
-    bool res = false;
-// Finding block size to be jumped
-    int paso = sqrt(v.size());
-    int prev = 0;
-    while (prev < v.size() && !res) {
-        if (v[prev] == e) {
-            res = true;
-        } else if (v[prev] < e) {
-        } else {//v[prev] > e busco desde prev hasta prev-sqrt(|v|)
 
-            res = linealEntreIndices(v, prev - minimo(sqrt(v.size()), prev), prev, e);
-        }
-        prev = prev + paso;
-
-    }
-
-    return res;
-}*/
 bool JumpSearch(vector<int> v, int e) {
     bool res = false;
 // Finding block size to be jumped
@@ -129,22 +112,9 @@ bool JumpSearch(vector<int> v, int e) {
     return res;
 }
 
-int jump_Search(vector<int> v , int item) {
-    int i = 0;
-    int m = sqrt(v.size()); //initializing block size= √(n)
-
-    while (v[m] <= item && m < v.size()) {
-        // the control will continue to jump the blocks
-        i = m;  // shift the block
-        m += sqrt(v.size());
-        if (m > v.size() - 1)  // if m exceeds the array size
-            return -1;
-    }
-}
-
-
 // STRINGS BUSQUEDA
-
+//busquedaString, busca si un string esta incluido en otro o son iguales
+//Posible O(n^2)
 bool matches(string &t, string &p, int i) {
     int k = 0;
     while (k < p.size() && t[i + k] == p[k]) {
@@ -152,7 +122,7 @@ bool matches(string &t, string &p, int i) {
     }
     return k == p.size();
 }
-
+//Pre: |t| >= |p|
 bool busquedaString(string &t, string &p) {
     bool res = false;
     if (t.size() != 0) {
@@ -164,7 +134,8 @@ bool busquedaString(string &t, string &p) {
     }
     return res;
 }
-
+//The welfare Crook
+//O(n)
 void crook(vector<int> &a,vector<int> &b, vector<int> &c, int &i, int &j, int &k){
     i =0, j =0, k=0;
     while (a[i] != b[j] || b[j] != c[k]){

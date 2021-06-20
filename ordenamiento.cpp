@@ -94,7 +94,7 @@ void mostrarVector(const vector<int>& v){
 }
 
 
-/* vector <int > countingSort (vector <int > & lista ) {
+vector <int > countingSort (vector <int > & lista ) {
     vector <int > conteo = contar ( lista ) ;
     return reconstruir (lista , conteo ) ;
 }
@@ -102,13 +102,12 @@ void mostrarVector(const vector<int>& v){
 vector <int > contar (vector <int > & lista ) {
 // creo un vector inicializado en 0
 // cuya longitud sea igual a una cota m�a xima
-    int COTA;
+    int COTA = max(lista);
     vector<int> conteo(COTA, 0);
     for (int i = 0; i < lista.size(); i++) {
         conteo[lista[i]]++;
     }
     return conteo;
-
 }
 
 vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
@@ -125,10 +124,33 @@ vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
         conteo[indice_conteo]--;
     }
 //Incompleto
-    return lista;
+    return  lista;
+
 }
 
-*/
+int maximo (int a, int b){
+    int res;
+    if (a > b){
+        res = a;
+    }
+    else {
+        res = b;
+    }
+    return res;
+}
+
+int max (vector<int> &v){
+    int maxi = v[0];
+    for (int i = 0; i <v.size() -1  ; ++i) {
+        if (v[i] > v[i+1]){
+            maxi = v[i];
+        }
+        else {maxi = v[i+1];}
+    }
+    return maxi;
+}
+
+
 
 void counting_sort(vector<int> & A){
 
@@ -244,5 +266,21 @@ void bingoSort(vector<int> &s) { // O( N^2)
             i = i + minPos.size();
         }
     }
+}
+
+vector<int> merge(vector<int> &a, vector<int> &b){
+    vector<int> c(a.size()+b.size(),0);
+    int i =0;
+    int j =0;
+    for (int k = 0; k <c.size() ; ++k) {
+        if( j>= b.size() || (i<a.size() && a[i] < b[j])){
+            c[k] = a[i];
+        i++;
+        } else{
+            c[k] = b[j];
+            j++;
+        }
+    }
+    return c;
 }
 

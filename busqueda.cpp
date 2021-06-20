@@ -87,7 +87,7 @@ int minimo(int a, int b){
     }
     return res;
 }
-bool JumpSearch(vector<int> v, int e) {
+/*bool JumpSearch(vector<int> v, int e) {
     bool res = false;
 // Finding block size to be jumped
     int paso = sqrt(v.size());
@@ -100,6 +100,28 @@ bool JumpSearch(vector<int> v, int e) {
 
             res = linealEntreIndices(v, prev - minimo(sqrt(v.size()), prev), prev, e);
         }
+        prev = prev + paso;
+
+    }
+
+    return res;
+}*/
+bool JumpSearch(vector<int> v, int e) {
+    bool res = false;
+// Finding block size to be jumped
+    int paso = sqrt(v.size());
+    int prev = 0;
+    while (prev < v.size() && !res) {
+        if (v[prev] == e) {
+            res = true;
+        } else if (v[prev] < e && prev+paso < v.size()) {
+            res = linealEntreIndices(v, prev, v.size()-1, e);
+
+        } else if(v[prev] > e && prev-paso >= 0){//v[prev] > e busco desde prev hasta prev-sqrt(|v|)
+            res = linealEntreIndices(v, prev-paso, prev, e);
+        }
+
+
         prev = prev + paso;
 
     }
@@ -141,4 +163,18 @@ bool busquedaString(string &t, string &p) {
         }
     }
     return res;
+}
+
+void crook(vector<int> &a,vector<int> &b, vector<int> &c, int &i, int &j, int &k){
+    i =0, j =0, k=0;
+    while (a[i] != b[j] || b[j] != c[k]){
+        if( a[i] < b[j]){
+            i++;
+        }
+        else if(b[j] < c[k]){
+            j++;
+        } else {
+            k++;
+        }
+    }
 }

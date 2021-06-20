@@ -31,6 +31,9 @@ vector<int> findAllMinPositions(vector<int> s, int d, int h);
 void cocktailShakerSort(vector<int> &s);
 void cocktailSort(vector<int> &s);
 void counting_sort(vector<int> & A);
+vector<int> merge(vector<int> &a, vector<int> &b);
+int maximo (int a, int b);
+int max (vector<int> &v);
 
 
 #endif //ALGO_1_ALGOS_ORDENAMIENTO_H

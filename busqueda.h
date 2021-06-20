@@ -22,5 +22,6 @@ int minimo(int a, int b);
 int jump_Search(vector<int> v , int item);
 bool matches(string &t, string &p, int i);
 bool busquedaString(string &t, string &p);
+void crook(vector<int> &a,vector<int> &b, vector<int> &c, int &i, int &j, int &k);
 
 #endif //ALGO_1_ALGOS_BUSQUEDA_H

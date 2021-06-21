@@ -92,6 +92,35 @@ vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
 //--------------------------------------------------//
 
 //Counting Sort
+/* Ordena de manera Creciente
+vector<int> contar(vector<int> &lista){
+    vector<int> conteo(150,0); //ELEGIR UNA COTA DE ELEMENTOS (EJ: 150 (del 1 al 150))
+    for(int i=0;i<lista.size();i++){
+        conteo[lista[i]]--;
+    }
+    return conteo;
+}
+
+vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
+    vector<int> resultado(lista.size());
+    int indice_conteo = 0;
+    for(int i=0;i<lista.size();i++){
+        while(conteo[indice_conteo]==0){
+            indice_conteo++;
+        }
+        lista[i]=indice_conteo;
+        conteo[indice_conteo]++;
+    }
+    return resultado;
+}
+
+void countingSort(vector<int> &items){
+    vector<int> conteo = contar(items);
+    reconstruir(items,conteo);
+
+}
+ */
+//Counting Sort
 //Ordena de forma Decreciente
 //O(n)
 vector<int> contar(vector<int> &lista){

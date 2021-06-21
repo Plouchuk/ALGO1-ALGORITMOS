@@ -25,7 +25,7 @@ void burbujeo ( vector <int > &lista , int i);
 vector <int > bubbleSort (vector <int > lista );
 vector <int > reconstruir (vector <int > &lista , vector <int> conteo );
 vector <int > contar (vector <int > & lista );
-vector <int > countingSort (vector <int > & lista );
+void countingSort (vector <int > & lista );
 void swapVector(vector<int> &s, int i, vector<int> l);
 void bingoSort(vector<int> &s);
 vector<int> findAllMinPositions(vector<int> s, int d, int h);

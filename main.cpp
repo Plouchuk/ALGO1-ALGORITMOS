@@ -30,17 +30,19 @@ int main() {
    // mostrarVector(A);
    // mostrarVector(B);
    // mostrarVector(C);
-    cout << "Jump : " << JumpSearch(A,19) << endl;
+    //cout << "Jump : " << JumpSearch(A,19) << endl;
     //cout << " es:" << busquedaBin(A,0,A.size(), 178)<< endl;
     //cout << "La verdad es:" << busquedaString(c, d) << endl;
     //counting_sort(D);
     //mostrarVector(D);
-
+    mostrarVector(B);
+    countingSort(B);
+    mostrarVector(B);
     //mostrarVector(merge(B,C));
-   // mostrarVector(countingSort(D));
+    //mostrarVector(countingSort(D));
     //Quicksort(D,0,D.size()-1);
     //mostrarVector(D);
-   // counting_sorttt(D, -1, 19);
+    //counting_sorttt(D, -1, 19);
     //ordenarC(E);
     //bucket(E);
     //mostrarVector(E);

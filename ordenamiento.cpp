@@ -92,38 +92,32 @@ vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
 //--------------------------------------------------//
 
 //Counting Sort
-//No funciona
+//Ordena de forma Decreciente
 //O(n)
-vector <int > countingSort (vector <int > & lista ) {
-    vector <int > conteo = contar ( lista ) ;
-    return reconstruir (lista , conteo ) ;
-}
-
-vector <int > contar (vector <int > & lista ) {
-// creo un vector inicializado en 0
-// cuya longitud sea igual a una cota m�a xima
-    int COTA = max(lista);
-    vector<int> conteo(COTA, 0);
-    for (int i = 0; i < lista.size(); i++) {
+vector<int> contar(vector<int> &lista){
+    vector<int> conteo(150,0); //ELEGIR UNA COTA DE ELEMENTOS (EJ: 150 (del 1 al 150))
+    for(int i=0;i<lista.size();i++){
         conteo[lista[i]]++;
     }
     return conteo;
 }
 
-vector<int> reconstruir(vector<int> &lista, vector<int> conteo) {
-    vector<int> resultado(lista.size(), 0);//0 ?
-    int indice_conteo = 0;
-    for (int i = 0; i < lista.size(); i++) {
-        // Ignoro valores nulos
-        while (conteo[indice_conteo] == 0) {
-            indice_conteo++;
-
+vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
+    vector<int> resultado(lista.size());
+    int indice_conteo = 149;
+    for(int i=0;i<lista.size();i++){
+        while(conteo[indice_conteo]==0){
+            indice_conteo--;
         }
-
-        lista[i] = indice_conteo;
+        lista[i]=indice_conteo;
         conteo[indice_conteo]--;
     }
-    return  lista;
+    return resultado;
+}
+
+void countingSort(vector<int> &items){
+    vector<int> conteo = contar(items);
+    reconstruir(items,conteo);
 
 }
 
@@ -262,6 +256,7 @@ void Quicksort(vector<int> &v, int start, int end ){
         Quicksort(v,p+1,end);
     }
 }
+
 
 //counting sort version 2
 //O(n)

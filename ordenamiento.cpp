@@ -92,8 +92,9 @@ vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
 //--------------------------------------------------//
 
 //Counting Sort
-/* Ordena de manera Creciente
-vector<int> contar(vector<int> &lista){
+//O(n)
+// Ordena de manera Creciente
+vector<int> contarCREC(vector<int> &lista){
     vector<int> conteo(150,0); //ELEGIR UNA COTA DE ELEMENTOS (EJ: 150 (del 1 al 150))
     for(int i=0;i<lista.size();i++){
         conteo[lista[i]]--;
@@ -101,7 +102,7 @@ vector<int> contar(vector<int> &lista){
     return conteo;
 }
 
-vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
+vector<int> reconstruirCREC(vector<int> &lista, vector<int> conteo){
     vector<int> resultado(lista.size());
     int indice_conteo = 0;
     for(int i=0;i<lista.size();i++){
@@ -114,16 +115,17 @@ vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
     return resultado;
 }
 
-void countingSort(vector<int> &items){
-    vector<int> conteo = contar(items);
-    reconstruir(items,conteo);
+void countingSortCREC(vector<int> &items){
+    vector<int> conteo = contarCREC(items);
+    reconstruirCREC(items,conteo);
 
 }
- */
+
 //Counting Sort
 //Ordena de forma Decreciente
 //O(n)
-vector<int> contar(vector<int> &lista){
+
+vector<int> contarDEC(vector<int> &lista){
     vector<int> conteo(150,0); //vector<int> conteo(COTA+1, 0)
     for(int i=0;i<lista.size();i++){
         conteo[lista[i]]++;
@@ -131,7 +133,7 @@ vector<int> contar(vector<int> &lista){
     return conteo;
 }
 
-vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
+vector<int> reconstruirDEC(vector<int> &lista, vector<int> conteo){
     vector<int> resultado(lista.size());
     int indice_conteo = 149; //COTA = 149, elegir cualquier elemento como máximo (del 0 al 149)
     for(int i=0;i<lista.size();i++){
@@ -144,9 +146,9 @@ vector<int> reconstruir(vector<int> &lista, vector<int> conteo){
     return resultado;
 }
 
-void countingSort(vector<int> &items){
-    vector<int> conteo = contar(items);
-    reconstruir(items,conteo);
+void countingSortDec(vector<int> &items){
+    vector<int> conteo = contarDEC(items);
+    reconstruirDEC(items,conteo);
 
 }
 

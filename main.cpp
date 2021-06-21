@@ -36,7 +36,7 @@ int main() {
     //counting_sort(D);
     //mostrarVector(D);
     mostrarVector(B);
-    countingSort(B);
+    countingSortCREC(B);
     mostrarVector(B);
     //mostrarVector(merge(B,C));
     //mostrarVector(countingSort(D));

@@ -128,12 +128,40 @@ CMakeFiles/algo_1_algos.dir/ejercicios.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/ejercicios.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/ejercicios.cpp" -o CMakeFiles/algo_1_algos.dir/ejercicios.cpp.s
 
+CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o: CMakeFiles/algo_1_algos.dir/flags.make
+CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o: ../BusquedaMatrices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o -c "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp"
+
+CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp" > CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.i
+
+CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp" -o CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.s
+
+CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o: CMakeFiles/algo_1_algos.dir/flags.make
+CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o: ../OrdenamientoMatrices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o -c "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp"
+
+CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp" > CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.i
+
+CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp" -o CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.s
+
 # Object files for target algo_1_algos
 algo_1_algos_OBJECTS = \
 "CMakeFiles/algo_1_algos.dir/main.cpp.o" \
 "CMakeFiles/algo_1_algos.dir/busqueda.cpp.o" \
 "CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.o" \
-"CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o"
+"CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o" \
+"CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o" \
+"CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
 
 # External object files for target algo_1_algos
 algo_1_algos_EXTERNAL_OBJECTS =
@@ -142,9 +170,11 @@ algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/main.cpp.o
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/busqueda.cpp.o
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.o
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o
+algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o
+algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/build.make
 algo_1_algos.exe: CMakeFiles/algo_1_algos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable algo_1_algos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable algo_1_algos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/algo_1_algos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

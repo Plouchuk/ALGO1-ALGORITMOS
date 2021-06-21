@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.h">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp">
+			<Option target="algo_1_algos"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.h">
+			<Option target="algo_1_algos"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/busqueda.cpp">
 			<Option target="algo_1_algos"/>
 		</Unit>

@@ -59,7 +59,10 @@ vector<int> merge(vector<int> &a, vector<int> &b);
 //Counting sort medio choto
 void counting_sort(vector<int> & A);
 
+//Devuelve el maximo entre 2 numeros
 int maximo (int a, int b);
+
+//Devuelve el maximo elemento de un vector
 int max (vector<int> &v);
 
 //Partition Sort

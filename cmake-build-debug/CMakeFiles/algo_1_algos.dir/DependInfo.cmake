@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o"
+  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
   "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/busqueda.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
   "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/ejercicios.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o"
   "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/main.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.o"

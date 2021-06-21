@@ -1,10 +1,12 @@
 #include <iostream>
 #include "busqueda.h"
 #include "ordenamiento.h"
+#include "BusquedaMatrices.h"
 #include <string>
 #include "ejercicios.h"
 #include<array>
 #include <ctime>
+#include "OrdenamientoMatrices.h"
 using namespace std;
 
 int main() {
@@ -35,9 +37,9 @@ int main() {
     //cout << "La verdad es:" << busquedaString(c, d) << endl;
     //counting_sort(D);
     //mostrarVector(D);
-    mostrarVector(B);
-    countingSortCREC(B);
-    mostrarVector(B);
+    //mostrarVector(B);
+    //countingSortCREC(B);
+    //mostrarVector(B);
     //mostrarVector(merge(B,C));
     //mostrarVector(countingSort(D));
     //Quicksort(D,0,D.size()-1);
@@ -46,6 +48,15 @@ int main() {
     //ordenarC(E);
     //bucket(E);
     //mostrarVector(E);
+    vector<vector<int>> MAT1 = {{1,2,8},{8,9,6},{7,8,0}};
+    pair<int,int> coordXY;
+    coordXY = BuscarCoordMinElemEnMat(MAT1, 1, 3);
+    mostrarCoordenada(coordXY);
+
+    mostrarMatriz(MAT1);
+    //mostrarCoordenada(EncontrarIndiceDelElem(MAT1, 9));
+    cout<<MAT1[coordXY.first][coordXY.second]<<endl;
+
     vector<int> K = {1,7,27,5,4};
     cout<< "manaos : "<< algunProductoEsDividido(K,21)<< endl;
     t1 = clock();

@@ -142,6 +142,60 @@ algo_1_algos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/build
 .PHONY : algo_1_algos/fast
 
+BusquedaMatrices.o: BusquedaMatrices.cpp.o
+
+.PHONY : BusquedaMatrices.o
+
+# target to build an object file
+BusquedaMatrices.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o
+.PHONY : BusquedaMatrices.cpp.o
+
+BusquedaMatrices.i: BusquedaMatrices.cpp.i
+
+.PHONY : BusquedaMatrices.i
+
+# target to preprocess a source file
+BusquedaMatrices.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.i
+.PHONY : BusquedaMatrices.cpp.i
+
+BusquedaMatrices.s: BusquedaMatrices.cpp.s
+
+.PHONY : BusquedaMatrices.s
+
+# target to generate assembly for a file
+BusquedaMatrices.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.s
+.PHONY : BusquedaMatrices.cpp.s
+
+OrdenamientoMatrices.o: OrdenamientoMatrices.cpp.o
+
+.PHONY : OrdenamientoMatrices.o
+
+# target to build an object file
+OrdenamientoMatrices.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o
+.PHONY : OrdenamientoMatrices.cpp.o
+
+OrdenamientoMatrices.i: OrdenamientoMatrices.cpp.i
+
+.PHONY : OrdenamientoMatrices.i
+
+# target to preprocess a source file
+OrdenamientoMatrices.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.i
+.PHONY : OrdenamientoMatrices.cpp.i
+
+OrdenamientoMatrices.s: OrdenamientoMatrices.cpp.s
+
+.PHONY : OrdenamientoMatrices.s
+
+# target to generate assembly for a file
+OrdenamientoMatrices.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/algo_1_algos.dir/build.make CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.s
+.PHONY : OrdenamientoMatrices.cpp.s
+
 busqueda.o: busqueda.cpp.o
 
 .PHONY : busqueda.o
@@ -259,6 +313,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algo_1_algos"
+	@echo "... BusquedaMatrices.o"
+	@echo "... BusquedaMatrices.i"
+	@echo "... BusquedaMatrices.s"
+	@echo "... OrdenamientoMatrices.o"
+	@echo "... OrdenamientoMatrices.i"
+	@echo "... OrdenamientoMatrices.s"
 	@echo "... busqueda.o"
 	@echo "... busqueda.i"
 	@echo "... busqueda.s"

@@ -96,8 +96,8 @@ vector <int > bubbleSort (vector <int > lista ) { // O (n^2)
 // Ordena de manera Creciente
 vector<int> contarCREC(vector<int> &lista){
     vector<int> conteo(150,0); //ELEGIR UNA COTA DE ELEMENTOS (EJ: 150 (del 1 al 150))
-    for(int i=0;i<lista.size();i++){
-        conteo[lista[i]]--;
+    for(int i=0;i<lista.size();i++){//conteo[lista[i]] es el elemento en la posicion lista[i]
+        conteo[lista[i]] = conteo[lista[i]]-1;//le bajo 1 en cada aparicion de lista[i]
     }
     return conteo;
 }

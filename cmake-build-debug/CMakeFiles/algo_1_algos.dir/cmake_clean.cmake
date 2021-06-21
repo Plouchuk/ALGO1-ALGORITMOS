@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o"
+  "CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
   "CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
   "CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o"
   "CMakeFiles/algo_1_algos.dir/main.cpp.o"

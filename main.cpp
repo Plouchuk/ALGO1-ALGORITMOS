@@ -50,12 +50,15 @@ int main() {
     //mostrarVector(E);
     vector<vector<int>> MAT1 = {{1,2,8},{8,9,6},{7,8,0}};
     pair<int,int> coordXY;
-    coordXY = BuscarCoordMinElemEnMat(MAT1, 1, 3);
+    coordXY = BuscarCoordMinElemEnMat(MAT1, {2,0}, {2,1});
     mostrarCoordenada(coordXY);
 
     mostrarMatriz(MAT1);
-    //mostrarCoordenada(EncontrarIndiceDelElem(MAT1, 9));
+
     cout<<MAT1[coordXY.first][coordXY.second]<<endl;
+
+    OrdenarMatriz(MAT1);
+    mostrarMatriz(MAT1);
 
     vector<int> K = {1,7,27,5,4};
     cout<< "manaos : "<< algunProductoEsDividido(K,21)<< endl;

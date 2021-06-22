@@ -13,7 +13,8 @@ using namespace  std;
 class OrdenamientoMatrices {
 
 };
-pair<int,int> BuscarCoordMinElemEnMat(vector<vector<int>> m,int af,int bc);
+void swapMat(vector<vector<int>> &m, pair<int,int> cd, pair<int,int> ch);
+pair<int,int> BuscarCoordMinElemEnMat(vector<vector<int>> m,pair<int,int> cIni,pair<int,int> cFin);
 void OrdenarMatriz(vector<vector<int>> &m);
 
 #endif //ALGO_1_ALGOS_ORDENAMIENTOMATRICES_H

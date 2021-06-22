@@ -73,3 +73,15 @@ pair<int,int> EncontrarIndiceDelElem(vector<vector<int>> m, int elem){
 //Busqueda Binaria en Matrices (Ordenadas)
 
 //Jump Search en Matrices
+
+/**************************************************************************************************/
+//Enunciado de Segundo parcial(19/11/20) Ej 3)
+//Matriz de Zooms:
+//Matriz dimension = nxn
+//(∀i : Z)(∀j : Z)((0 ≤ i < n ∧ 0 ≤ j < n − 1) −→L M[i][j] < M[i][j + 1])
+//(∀i : Z)(1 ≤ i < n −→L (∃j : Z)(0 ≤ j < n − 1 ∧L M[i − 1][j] < M[i][0] ∧ M[i][n − 1] < M[i − 1][j + 1]))
+//O(n)
+//Pre: esMatrizDeZooms(M)
+
+//bool BuscarEnZooms(vector<vector<int>> &M, int elem, int &fi, int &co){
+//}

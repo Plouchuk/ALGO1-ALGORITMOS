@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/BusquedaMatrices.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o"
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/OrdenamientoMatrices.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/busqueda.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/ejercicios.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o"
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/main.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.o"
-  "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/ordenamiento.cpp" "/cygdrive/c/Users/Edu/Desktop/ALGO 1/Algoritmos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.o"
+  "D:/ALGO 1/algo 1 algos/BusquedaMatrices.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.obj"
+  "D:/ALGO 1/algo 1 algos/OrdenamientoMatrices.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.obj"
+  "D:/ALGO 1/algo 1 algos/busqueda.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
+  "D:/ALGO 1/algo 1 algos/ejercicios.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/ejercicios.cpp.obj"
+  "D:/ALGO 1/algo 1 algos/main.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+  "D:/ALGO 1/algo 1 algos/ordenamiento.cpp" "D:/ALGO 1/algo 1 algos/cmake-build-debug/CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

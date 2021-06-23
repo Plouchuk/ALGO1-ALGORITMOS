@@ -1,12 +1,10 @@
 #include <iostream>
 #include "busqueda.h"
 #include "ordenamiento.h"
-#include "BusquedaMatrices.h"
 #include <string>
 #include "ejercicios.h"
 #include<array>
 #include <ctime>
-#include "OrdenamientoMatrices.h"
 using namespace std;
 
 int main() {
@@ -25,8 +23,8 @@ int main() {
     //cocktailSort(B);
     //cocktailShakerSort(C );
    //mostrarVector(insertionSort(D));
-    string c = "PARAGUAY";
-    string d = "PARA";
+    string c = "abcdefghijklmnopqrstuvwxyz";
+    string d = "badcefghijklmnporqtsvuyxzw";
     //selectionSort(A);
    // bingoSort(D);
    // mostrarVector(A);
@@ -34,34 +32,31 @@ int main() {
    // mostrarVector(C);
     //cout << "Jump : " << JumpSearch(A,19) << endl;
     //cout << " es:" << busquedaBin(A,0,A.size(), 178)<< endl;
-    //cout << "La verdad es:" << busquedaString(c, d) << endl;
+    cout << "La verdad es:" << busquedaString(c, d) << endl;
     //counting_sort(D);
     //mostrarVector(D);
-    //mostrarVector(B);
-    //countingSortCREC(B);
-    //mostrarVector(B);
+
     //mostrarVector(merge(B,C));
-    //mostrarVector(countingSort(D));
+   // mostrarVector(countingSort(D));
     //Quicksort(D,0,D.size()-1);
     //mostrarVector(D);
-    //counting_sorttt(D, -1, 19);
+   // counting_sorttt(D, -1, 19);
     //ordenarC(E);
     //bucket(E);
     //mostrarVector(E);
-    vector<vector<int>> MAT1 = {{1,2,8},{8,9,6},{7,8,0}};
-    pair<int,int> coordXY;
-    coordXY = BuscarCoordMinElemEnMat(MAT1, {2,0}, {2,1});
-    mostrarCoordenada(coordXY);
-
-    mostrarMatriz(MAT1);
-
-    cout<<MAT1[coordXY.first][coordXY.second]<<endl;
-
-    OrdenarMatriz(MAT1);
-    mostrarMatriz(MAT1);
-
-    vector<int> K = {1,7,27,5,4};
-    cout<< "manaos : "<< algunProductoEsDividido(K,21)<< endl;
+    vector<int> K = {1,7,27,149,4};
+    //countingSortCREC(K);
+    countingSortDec(K);
+   //mostrarVector(K);
+    //cout<< "manaos : "<< algunProductoEsDividido(K,21)<< endl;
+   // cout<< "LL :" << busquedaKMP(c ,d)<<endl;
+   string h = "gracias";
+    //mostrarVector(contarABC(h));
+    //cout<< " " << int('n')  <<endl;
+    //string jh = "abcdefghijklmnopqrstuvwxyz";
+   // cout << " EsPermutacion: " << esPermutacion(c,d) <<endl;
+   vector<int> z = {1,2,3,0,0,0};
+    mostrarVector(reconstruime(z));
     t1 = clock();
 
 

@@ -149,3 +149,35 @@ void crook(vector<int> &a,vector<int> &b, vector<int> &c, int &i, int &j, int &k
         }
     }
 }
+
+vector<int> calcularPi(string &p) {
+    vector<int> pi(p.size());
+    int i = 0;
+    for (int j = 1; j < p.size(); j++) {
+        while (i > 0 && p[i] != p[j]) {
+            i = pi[i - 1];
+        }
+        if (p[i] == p[j]){
+            i++;
+        }
+        pi[j] = i;
+    }
+    return pi;
+}
+
+bool busquedaKMP(string &t, string &p) {
+    vector<int> pi = calcularPi(p);
+    int l = 0;
+    int r = 0;
+    while (r < t.size() && r - l < p.size()) {
+        if (t[r] == p[r - l]) {
+            r++;
+        } else if ( l == r) {
+            r++;
+            l++;
+        } else {
+            l = r - pi[r - l];
+        }
+    }
+    return r - l == p.size();
+}

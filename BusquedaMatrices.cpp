@@ -85,3 +85,8 @@ pair<int,int> EncontrarIndiceDelElem(vector<vector<int>> m, int elem){
 
 //bool BuscarEnZooms(vector<vector<int>> &M, int elem, int &fi, int &co){
 //}
+
+/*   i = 0 (1,2,3)
+ **  i = 1 (4,5,7)
+ *   i = 2 (8,9,10)
+ i = 3 (b, c, d, e) */

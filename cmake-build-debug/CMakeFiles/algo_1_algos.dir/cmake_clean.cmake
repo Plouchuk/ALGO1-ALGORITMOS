@@ -1,11 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.o"
-  "CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.o"
-  "CMakeFiles/algo_1_algos.dir/busqueda.cpp.o"
-  "CMakeFiles/algo_1_algos.dir/ejercicios.cpp.o"
-  "CMakeFiles/algo_1_algos.dir/main.cpp.o"
-  "CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.o"
+  "CMakeFiles/algo_1_algos.dir/BusquedaMatrices.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/OrdenamientoMatrices.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/busqueda.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/ejercicios.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/main.cpp.obj"
+  "CMakeFiles/algo_1_algos.dir/ordenamiento.cpp.obj"
   "algo_1_algos.exe"
+  "algo_1_algos.exe.manifest"
   "algo_1_algos.pdb"
   "libalgo_1_algos.dll.a"
 )
